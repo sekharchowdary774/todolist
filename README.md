@@ -16,22 +16,7 @@ Context API (State Management)
 CSS
 Backend: Flask (Python)
 Database: MySQL
-📂 Project Structure
-frontend/
-│
-├── src/
-│   ├── Components/
-│   │   ├── Dashboard.js
-│   │   ├── List.js
-│   │   ├── Login.js
-│   │   ├── Sidebar.js
-│   │   └── Settings.js
-│   │
-│   ├── context/
-│   │   └── TaskContext.js
-│   │
-│   ├── App.js
-│   └── index.js
+
 ⚙️ Setup & Installation
 1. Clone Repository
 git clone https://github.com/sekharchowdary774/todolist
@@ -80,6 +65,7 @@ Don’t hide this — this is where most candidates lie.
 ❌ No global loading states
 ❌ No token refresh handling
 ❌ Some data may reset if backend not connected properly
+
 🚧 Future Improvements
 Improve UI (Tailwind / Material UI)
 Add charts (task analytics)
