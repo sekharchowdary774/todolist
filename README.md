@@ -111,9 +111,11 @@ cd todolist/backend
 3. Install Dependencies
 pip install -r requirements.txt
 
-If you don’t have requirements.txt, install manually:
+
+#If you don’t have requirements.txt, install manually:
 
 pip install flask flask-cors mysql-connector-python
+
 4. Configure Database
 
 Update your db.py file:
@@ -126,5 +128,65 @@ def get_db_connection():
         database="todo_db"
     )
 
-## ⚙️ Setup & Installation
+5. Run Server
+python app.py
+
+Server runs at:
+
+http://localhost:5000
+🔑 API Endpoints
+🔐 Authentication
+Method	Endpoint	Description
+POST	/register	Register new user
+POST	/login	Login user
+🔄 Password Management
+Method	Endpoint	Description
+POST	/reset-password	Generate reset link
+POST	/update-password	Update password using email
+👤 User Management
+Method	Endpoint	Description
+PUT	/update_user/<id>	Update username/password
+DELETE	/delete_user/<id>	Delete user
+🔗 Example Requests
+Register User
+POST /register
+{
+  "username": "sekhar",
+  "email": "sekhar@gmail.com",
+  "password": "123456"
+}
+Login User
+POST /login
+{
+  "username": "sekhar",
+  "password": "123456"
+}
+🖼️ Screenshots
+
+Screenshots of API responses and testing are available in the assets/ folder.
+
+⚠️ Current Limitations
+❌ Passwords stored in plain text (not secure)
+❌ No JWT/session authentication
+❌ No email service for password reset (link is generated only)
+❌ No input validation or sanitization
+❌ No task management APIs yet
+❌ No role-based access control
+🚧 Future Improvements
+Add password hashing (bcrypt)
+Implement JWT authentication
+Add task CRUD APIs
+Integrate email service for password reset
+Add input validation & error handling
+Add API documentation (Swagger/Postman)
+🔗 Frontend
+
+React frontend for this project:
+
+https://github.com/sekharchowdary774/todolist/tree/main/frontend
+
+👨‍💻 Author
+
+Sekhar Kamma
+GitHub: https://github.com/sekharchowdary774
 
