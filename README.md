@@ -131,31 +131,29 @@ def get_db_connection():
 5. Run Server
 python app.py
 
-Server runs at:
-
-http://localhost:5000
-🔑 API Endpoints
-🔐 Authentication
-Method	Endpoint	Description
-POST	/register	Register new user
-POST	/login	Login user
-🔄 Password Management
-Method	Endpoint	Description
-POST	/reset-password	Generate reset link
-POST	/update-password	Update password using email
+Server runs at: http://localhost:5000
+* 🔑 API Endpoints
+* 🔐 Authentication
+## Method	Endpoint	Description
+* POST	/register	Register new user
+* POST	/login	Login user
+## Password Management
+ Method	Endpoint	Description
+* POST	/reset-password	Generate reset link
+* POST	/update-password	Update password using email
 👤 User Management
-Method	Endpoint	Description
-PUT	/update_user/<id>	Update username/password
-DELETE	/delete_user/<id>	Delete user
+  ## Method	Endpoint	Description
+* PUT	/update_user/<id>	Update username/password
+* DELETE	/delete_user/<id>	Delete user
 🔗 Example Requests
-Register User
+## Register User
 POST /register
 {
   "username": "sekhar",
   "email": "sekhar@gmail.com",
   "password": "123456"
 }
-Login User
+## Login User
 POST /login
 {
   "username": "sekhar",
@@ -166,19 +164,20 @@ POST /login
 Screenshots of API responses and testing are available in the assets/ folder.
 
 ⚠️ Current Limitations
-❌ Passwords stored in plain text (not secure)
-❌ No JWT/session authentication
-❌ No email service for password reset (link is generated only)
-❌ No input validation or sanitization
-❌ No task management APIs yet
-❌ No role-based access control
+* ❌ Passwords stored in plain text (not secure)
+* ❌ No JWT/session authentication
+* ❌ No email service for password reset (link is generated only)
+* ❌ No input validation or sanitization
+* ❌ No task management APIs yet
+* ❌ No role-based access control
 🚧 Future Improvements
-Add password hashing (bcrypt)
-Implement JWT authentication
-Add task CRUD APIs
-Integrate email service for password reset
-Add input validation & error handling
-Add API documentation (Swagger/Postman)
+* Add password hashing (bcrypt)
+* Implement JWT authentication
+* Add task CRUD APIs
+* Integrate email service for password reset
+* Add input validation & error handling
+* Add API documentation (Swagger/Postman)
+
 🔗 Frontend
 
 React frontend for this project:
