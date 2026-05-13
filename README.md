@@ -10,6 +10,7 @@ Frontend for a full-stack Todo Dashboard application built with React, integrate
 * 📁 Sidebar Navigation (Dashboard, Tasks, Settings)
 * ⚙️ User Settings (Update profile, logout)
 * 🔄 API integration with backend (Flask)
+* 
 # 🛠️ Tech Stack
 React.js
 React Router DOM
@@ -39,15 +40,15 @@ http://localhost:5000
 
 Example API usage:
 
-Login → POST /login
-Register → POST /register
-Tasks → /tasks
-🔐 Authentication Flow
-User logs in via /login
-Backend returns JWT/session
-Token stored in localStorage
-Protected routes (Dashboard, Tasks, Settings)
-📊 Dashboard Logic
+* Login → POST /login
+* Register → POST /register
+* Tasks → /tasks
+# 🔐 Authentication Flow
+* User logs in via /login
+* Backend returns JWT/session
+* Token stored in localStorage
+* Protected routes (Dashboard, Tasks, Settings)
+* 📊 Dashboard Logic
 
 Dashboard dynamically displays:
 
@@ -68,9 +69,9 @@ Don’t hide this — this is where most candidates lie.
 * ❌ Some data may reset if backend not connected properly
 
 #🚧 Future Improvements
-*Improve UI (Tailwind / Material UI)
-*Add charts (task analytics)
-*Add dark mode
-*Optimize API handling (Axios interceptors)
-*Add form validation
-*Improve state management (Redux / Zustand)
+* Improve UI (Tailwind / Material UI)
+* Add charts (task analytics)
+* Add dark mode
+* Optimize API handling (Axios interceptors)
+* Add form validation
+* Improve state management (Redux / Zustand)
