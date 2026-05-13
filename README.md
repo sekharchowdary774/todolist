@@ -103,5 +103,28 @@ This backend handles user authentication, account management, and password reset
 - **MySQL Connector**
 
 
+##⚙️ Setup & Installation
+1. Clone Repository
+git clone https://github.com/sekharchowdary774/todolist
+2. Navigate to Backend
+cd todolist/backend
+3. Install Dependencies
+pip install -r requirements.txt
+
+If you don’t have requirements.txt, install manually:
+
+pip install flask flask-cors mysql-connector-python
+4. Configure Database
+
+Update your db.py file:
+
+def get_db_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="your_password",
+        database="todo_db"
+    )
+
 ## ⚙️ Setup & Installation
 
