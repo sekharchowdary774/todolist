@@ -112,7 +112,7 @@ cd todolist/backend
 pip install -r requirements.txt
 
 
-# If you don’t have requirements.txt, install manually:
+If you don’t have requirements.txt, install manually:
 
 pip install flask flask-cors mysql-connector-python
 
@@ -154,6 +154,7 @@ POST /register
   "email": "sekhar@gmail.com",
   "password": "123456"
 }
+
 Login User
 POST /login
 {
