@@ -2,14 +2,15 @@
 
 Frontend for a full-stack Todo Dashboard application built with React, integrated with a Flask + MySQL backend.
 
-📌 Features
-🔐 User Authentication (Login/Register)
-📊 Dashboard with real-time task statistics
-✅ Task Management (Add, Complete, Delete)
-📁 Sidebar Navigation (Dashboard, Tasks, Settings)
-⚙️ User Settings (Update profile, logout)
-🔄 API integration with backend (Flask)
-🛠️ Tech Stack
+
+# 📌 Features
+* 🔐 User Authentication (Login/Register)
+* 📊 Dashboard with real-time task statistics
+* ✅ Task Management (Add, Complete, Delete)
+* 📁 Sidebar Navigation (Dashboard, Tasks, Settings)
+* ⚙️ User Settings (Update profile, logout)
+* 🔄 API integration with backend (Flask)
+# 🛠️ Tech Stack
 React.js
 React Router DOM
 Context API (State Management)
@@ -59,17 +60,17 @@ Data is fetched from backend APIs and/or shared via Context API.
 ⚠️ Current Limitations
 
 Don’t hide this — this is where most candidates lie.
+ 
+* ❌ Limited error handling
+* ❌ Basic UI (not production-level)
+* ❌ No global loading states
+* ❌ No token refresh handling
+* ❌ Some data may reset if backend not connected properly
 
-❌ Limited error handling
-❌ Basic UI (not production-level)
-❌ No global loading states
-❌ No token refresh handling
-❌ Some data may reset if backend not connected properly
-
-🚧 Future Improvements
-Improve UI (Tailwind / Material UI)
-Add charts (task analytics)
-Add dark mode
-Optimize API handling (Axios interceptors)
-Add form validation
-Improve state management (Redux / Zustand)
+#🚧 Future Improvements
+*Improve UI (Tailwind / Material UI)
+*Add charts (task analytics)
+*Add dark mode
+*Optimize API handling (Axios interceptors)
+*Add form validation
+*Improve state management (Redux / Zustand)
