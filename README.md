@@ -103,7 +103,7 @@ This backend handles user authentication, account management, and password reset
 - **MySQL Connector**
 
 
-##⚙️ Setup & Installation
+## ⚙️ Setup & Installation
 1. Clone Repository
 git clone https://github.com/sekharchowdary774/todolist
 2. Navigate to Backend
@@ -112,7 +112,7 @@ cd todolist/backend
 pip install -r requirements.txt
 
 
-#If you don’t have requirements.txt, install manually:
+# If you don’t have requirements.txt, install manually:
 
 pip install flask flask-cors mysql-connector-python
 
@@ -141,25 +141,27 @@ Server runs at: http://localhost:5000
  Method	Endpoint	Description
 * POST	/reset-password	Generate reset link
 * POST	/update-password	Update password using email
-👤 User Management
-  ## Method	Endpoint	Description
+## 👤 User Management
+   Method	Endpoint	Description
 * PUT	/update_user/<id>	Update username/password
 * DELETE	/delete_user/<id>	Delete user
-🔗 Example Requests
-## Register User
+
+## 🔗 Example Requests
+ Register User
 POST /register
 {
   "username": "sekhar",
   "email": "sekhar@gmail.com",
   "password": "123456"
 }
-## Login User
+Login User
 POST /login
 {
   "username": "sekhar",
   "password": "123456"
 }
-🖼️ Screenshots
+
+## 🖼️ Screenshots
 
 Screenshots of API responses and testing are available in the assets/ folder.
 
@@ -170,7 +172,8 @@ Screenshots of API responses and testing are available in the assets/ folder.
 * ❌ No input validation or sanitization
 * ❌ No task management APIs yet
 * ❌ No role-based access control
-🚧 Future Improvements
+
+## 🚧 Future Improvements
 * Add password hashing (bcrypt)
 * Implement JWT authentication
 * Add task CRUD APIs
